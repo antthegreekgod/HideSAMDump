@@ -4,7 +4,7 @@ Windows introduced **Alternate Data Streams (ADS)** with the adoption of the NTF
 
 ## C: Drive Peculiarity
 
-The [CrowdStrike analysis of the ALPHA SPIDER ransomware attack](https://www.crowdstrike.com/en-us/blog/anatomy-of-alpha-spider-ransomware/?utm_source=chatgpt.com) documented the use of ADS to establish persistence on compromised systems. Specifically, the threat actors deployed an executable and concealed it within an Alternate Data Stream attached to the root directory of the **C:** volume.
+The [CrowdStrike analysis of the ALPHA SPIDER ransomware attack](https://www.crowdstrike.com/en-us/blog/anatomy-of-alpha-spider-ransomware/) documented the use of ADS to establish persistence on compromised systems. Specifically, the threat actors deployed an executable and concealed it within an Alternate Data Stream attached to the root directory of the **C:** volume.
 
 As noted in the report:
 
@@ -13,7 +13,9 @@ As noted in the report:
 This behavior makes ADS attached to the root of the system drive particularly attractive for stealthy persistence and data storage techniques.
 
 ---
-**Remarks:** Among the administrative tools I have tested, the only utility that reliably enumerates ADS attached to the root directory of the **C:** drive is [Streams (Sysinternals)](https://learn.microsoft.com/en-us/sysinternals/downloads/streams).
+
+*Remarks:* Among the administrative tools I have tested, the only utility that reliably enumerates ADS attached to the root directory of the **C:** drive is [Streams (Sysinternals)](https://learn.microsoft.com/en-us/sysinternals/downloads/streams).
+
 ---
 
 ## My Use Case
