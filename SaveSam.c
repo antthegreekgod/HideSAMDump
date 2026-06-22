@@ -18,7 +18,7 @@ BOOL SaveKey(IN LPCSTR LocationStorage, IN LPCSTR RegKeyName)
         return FALSE;
     }
 
-    printf("[+] Opened handle to SAM key\n");
+    printf("[+] Opened handle to %s key\n", RegKeyName);
 
     STATUS = RegSaveKeyA(hKEY, LocationStorage, NULL);
 
